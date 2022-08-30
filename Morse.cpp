@@ -1,39 +1,7 @@
-#include <iostream>
 #include <string>
+#include "letterDefinition.h"
 
 using namespace std;
-
-//Definizione stati
-#define START 0
-#define A 65
-#define B 66
-#define C 67
-#define D 68
-#define E 69
-#define F 70
-#define G 71
-#define H 72
-#define I 73
-#define J 74
-#define K 75
-#define L 76
-#define M 77
-#define N 78
-#define O 79
-#define P 80
-#define Q 81
-#define R 82
-#define S 83
-#define T 84
-#define U 85
-#define V 86
-#define W 87
-#define X 88
-#define Y 89
-#define Z 90
-#define ERROR 33
-#define SPACE 32
-#define SPAZIO_PAROLA 47
 
 bool checkPoint(string s){return (s == ".");}
 
@@ -42,7 +10,7 @@ bool checkDash(string s){return (s == "-");}
 bool checkSpace(string s){return (s == " ");}
 
 
-string automa(){
+string morseAutomata(){
 
     string morseCode;
     string code("");
@@ -412,13 +380,13 @@ string automa(){
                 state = T;
             else if(morseCode == "/"){
               code.append(1, char(state));
-              state = SPAZIO_PAROLA;           
+              state = WORD_SPACE;           
               }
             else
               state = ERROR;          
             break;
 
-        case SPAZIO_PAROLA:
+        case WORD_SPACE:
             if (checkPoint(morseCode))
                 state = E;
             else if (checkDash(morseCode))
@@ -431,12 +399,3 @@ string automa(){
 
     return code.append(1, char(state));
 }
-
-int main(void){
- 
-    cout << "Type your message here: ";
-    cout << "Output: " << automa() << endl;
-    
-    return 0;
-}
-
