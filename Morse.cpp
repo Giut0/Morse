@@ -18,7 +18,8 @@ string morseAutomata(){
     morseCode = getchar();
 
     while (morseCode != "\n"){
-      
+        
+        //Implementation of transition function
         switch (state){
 
         case START:
@@ -370,7 +371,6 @@ string morseAutomata(){
 
         case ERROR:
             code = "Syntax error";
-            
             break;
 
         case SPACE:
