@@ -1,3 +1,4 @@
+//Definition of automaton states
 #define START 0
 #define A 65
 #define B 66
