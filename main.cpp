@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Morse.cpp"
+#include "morse.cpp"
 
 using namespace std;
 
