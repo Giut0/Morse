@@ -1,4 +1,4 @@
-# Morse Decoder using Pushdown Automatonn <img src="https://media.giphy.com/media/U22HxRRRXQDHrRwxz7/giphy.gif" width="40"/>
+# Morse Decoder using Pushdown Automaton <img src="https://media.giphy.com/media/U22HxRRRXQDHrRwxz7/giphy.gif" width="40"/>
 
 
 Implementation of a Morse code decoder using a [pushdown automaton](https://en.wikipedia.org/wiki/Pushdown_automaton) in C++.
@@ -20,7 +20,7 @@ $$
 * $z = \lambda$
 * $F = \{q_a, q_b, \dots, q_z\}$
 
-## Structure and Functionality ⚙️
+## Structure and functionality ⚙️
 
 - **`morseAutomata()`**: Contains the implementation of the PDA for Morse code decoding;
 - **`Stack Operations`**: Utilizes a stack to manage state transitions and the decoding process;
