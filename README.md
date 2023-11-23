@@ -28,7 +28,7 @@ $$
 - **`Error Handling`**: States to identify and manage syntax errors in the Morse code input;
 - **`States`**: Represented as constants (e.g., `START`, `A`, `B`) and mapped to specific decoding logic.
 
-## Example of usage 📍
+## Example of usage 💪
 
 ```bash
 Type your morse code here: .... . .-.. .-.. --- / .-- --- .-. .-.. -..
