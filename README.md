@@ -1,11 +1,11 @@
-# Morse Decoder using Pushdown Automaton <img src="https://media.giphy.com/media/U22HxRRRXQDHrRwxz7/giphy.gif" width="40"/>
+# Morse Decoder using Pushdown Automata <img src="https://media.giphy.com/media/U22HxRRRXQDHrRwxz7/giphy.gif" width="40"/>
 
 
-Implementation of a Morse code decoder using a [pushdown automaton](https://en.wikipedia.org/wiki/Pushdown_automaton) in C++.
+Implementation of a Morse code decoder using a [pushdown automata](https://en.wikipedia.org/wiki/Pushdown_automaton) in C++.
 
 ## Overview 👀
 
-The program utilizes a pushdown automaton (PDA) to decode Morse code input character by character. The PDA progresses through various states based on the input, using a stack to manage transitions and decode the Morse code into alphanumeric characters, detecting spaces between words.
+The program utilizes a pushdown automata (PDA) to decode Morse code input character by character. The PDA progresses through various states based on the input, using a stack to manage transitions and decode the Morse code into alphanumeric characters, detecting spaces between words.
 
 ## Formal definition ✏️
 
